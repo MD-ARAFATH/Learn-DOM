@@ -14,9 +14,16 @@ const places = document.getElementsByClassName("important-place");
 for (const place of places) {
   console.log(place.innerText);
 }
+// }
 
 //option-4 --quarySelector (will return the first One)
 
 //option-5 --quarySelectorAll(collecting the node list)
-const items = document.querySelectorAll(".fruits-container li");
-console.log(items);
+// const items = document.querySelectorAll(".fruits-container li");
+// console.log(items);
+
+//option-6
+// element = document.getElementById("fruit-titles").style.textAlign="center";
+
+const addvalue = title.setAttribute("title", "hello java");
+console.log(addvalue);
