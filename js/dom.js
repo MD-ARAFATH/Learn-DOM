@@ -26,5 +26,5 @@ for (const place of places) {
 //option-6
 // element = document.getElementById("fruit-titles").style.textAlign="center";
 
-const addValue = title.setAttribute("title", "hello java");
-console.log(addValue);
+const title = document.getElementById("fruit-title");
+title.setAttribute("title", "hello java");
