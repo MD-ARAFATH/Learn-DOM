@@ -10,3 +10,6 @@ li {
 .important-place {
   color: chartreuse;
 }
+.fruits-container li {
+  color: blue;
+}
