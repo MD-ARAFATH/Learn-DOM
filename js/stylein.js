@@ -1,10 +1,12 @@
 const sections = document.querySelectorAll("section");
 for (const section of sections) {
-  section.style.border = "1px";
+  section.style.border = "5px";
+
   section.style.marginBottom = "5px";
   section.style.padding = "20px";
-  section.style.backgroundColor = "lightgrey";
+  section.style.backgroundColor = "gray";
 }
 
-let placesContainer = document.getElementById("places-container");
-placesContainer.style.backgroundColor = "white";
+let PlacesContainer = document.getElementById("Places-container");
+PlacesContainer.classList.add("text-center");
+PlacesContainer.classList.remove("large-text");
