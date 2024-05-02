@@ -6,9 +6,10 @@ const licollecttion = document.getElementsByTagName("li");
 console.log(licollecttion);
 
 //option-2 ---getElementById(using many tiimes)
-const fruit = document.getElementById("fruit-titles");
-console.log(fruit.innerText);
-
+window.onload = function () {
+  let fruit = document.getElementById("fruit-title");
+  console.log(fruit.innerText);
+};
 //option-3 --getElemetsByClassName
 const places = document.getElementsByClassName("important-place");
 for (const place of places) {
@@ -25,5 +26,5 @@ for (const place of places) {
 //option-6
 // element = document.getElementById("fruit-titles").style.textAlign="center";
 
-const addvalue = title.setAttribute("title", "hello java");
-console.log(addvalue);
+const title = document.getElementById("fruit-title");
+title.setAttribute("title", "hello java");
