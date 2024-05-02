@@ -7,7 +7,7 @@ console.log(licollecttion);
 
 //option-2 ---getElementById(using many tiimes)
 window.onload = function () {
-  let fruit = document.getElementById("fruit-titles");
+  let fruit = document.getElementById("fruit-title");
   console.log(fruit.innerText);
 };
 //option-3 --getElemetsByClassName
