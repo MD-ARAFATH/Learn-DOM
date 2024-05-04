@@ -10,3 +10,5 @@ for (const section of sections) {
 let PlacesContainer = document.getElementById("Places-container");
 PlacesContainer.classList.add("text-center");
 PlacesContainer.classList.remove("large-text");
+
+const placesNew = placesUL.appendChlid(li);
