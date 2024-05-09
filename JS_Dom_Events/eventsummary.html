@@ -8,7 +8,13 @@
   <body>
     <h1>JS DOM Event Summary</h1>
     <h3 id="handler-status">Default Text</h3>
-    <button onclick="handleButton()">Click</button>
+    <p id="input-text-display">input</p>
+    <input id="input-Field" type="text" />
+    <button id="btn-update">Update</button>
+    <br />
+    <button onclick="handleButton()">click</button>
+    <br />
+    <button id="event-listener">listen this</button>
 
     <script>
       function handleButton() {
@@ -16,6 +22,24 @@
         handlerStatus.innerText =
           "handle by function attached on click attribute";
       }
+      //option-2
+      document
+        .getElementById("event-listener")
+        .addEventListener(click, function () {
+          document.getElementById("handler-status").innerText =
+            "Handle by addEventListener";
+        });
+
+      //option-2
+      document
+        .getElementById("btn-update")
+        .addEventListener("click", function () {
+          const inputField = document.getElementById("input-Field");
+          const inputText = inputField.value;
+
+          const p = document.getElementById("input-text-display");
+          p.innerText = inputText;
+        });
     </script>
   </body>
 </html>
