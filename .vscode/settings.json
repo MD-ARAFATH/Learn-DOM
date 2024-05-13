@@ -1,0 +1,5 @@
+{
+  "editor.codeActionWidget.includeNearbyQuickFixes": true,
+  "editor.rename.enablePreview": true,
+  "editor.find.addExtraSpaceOnTop": true
+}
